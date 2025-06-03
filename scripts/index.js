@@ -23,6 +23,8 @@ const loginForm = document.querySelector('form');
                 localStorage.setItem('perfil', JSON.stringify(perfil))
                 window.location.href = './pages/dashboard.html';
               }
+            } else {
+              alert(`O usuário ${email} não está cadastrado no sistema.`)
             }
           });
         })

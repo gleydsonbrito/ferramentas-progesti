@@ -338,7 +338,7 @@
         
         .charts-grid {
             display: grid;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns:1fr;
             gap: 25px;
             margin-bottom: 40px;
         }
@@ -381,7 +381,7 @@
         }
         
         .chart-placeholder {
-            height: 300px;
+            width: 100%;
             background: linear-gradient(135deg, #f9f9f9, #f0f0f0);
             border-radius: 10px;
             display: flex;
@@ -391,6 +391,11 @@
             font-size: 18px;
             text-align: center;
             padding: 20px;
+        }
+
+        #bi {
+            width: 100%;
+            height: 40rem;
         }
         
         /* Recent Activity */
