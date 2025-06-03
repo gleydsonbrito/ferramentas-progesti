@@ -9,7 +9,7 @@ loginForm.addEventListener('submit', function (e) {
   fetch('./u.json')
     .then(res => res.json())
     .then(res => {
-      const findedUser = res.usuaris.find(u => u.email === inputEmail)
+      const findedUser = res.usuarios.find(u => u.email === inputEmail)
       if (findedUser) {
         res.usuarios.forEach(usuario => {
           if (usuario.login === inputEmail) {
