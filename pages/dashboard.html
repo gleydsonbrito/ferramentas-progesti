@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Institucional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-img">
+                <img style="width: 3rem;" src="../assets/logo.png" alt="">
+            </div>
+        </div>
+        
+        <nav class="menu">
+            <a href="#" class="menu-item active">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-users"></i>
+                <span>Usuários</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>Relatórios</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-cog"></i>
+                <span>Configurações</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Calendário</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-file-alt"></i>
+                <span>Documentos</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-bell"></i>
+                <span>Notificações</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-question-circle"></i>
+                <span>Ajuda</span>
+            </a>
+        </nav>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Pesquisar no sistema...">
+            </div>
+            
+            <div class="user-info">             
+                <div class="user-profile" id="userProfile">
+                    <div class="avatar"></div>
+                    <div class="user-details">
+                        <div class="user-name"></div>
+                        <div class="user-email"></div>
+                    </div>
+                    <i class="fas fa-chevron-down"></i>
+                    
+                    <!-- Dropdown Menu -->
+                    <div class="user-dropdown" id="userDropdown">
+                        <div class="dropdown-header">
+                            <div class="user-name"></div>
+                            <div class="user-email"></div>
+                        </div>
+                        
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-user"></i>
+                            <span>Meu Perfil</span>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-cog"></i>
+                            <span>Configurações</span>
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-lock"></i>
+                            <span>Alterar Senha</span>
+                        </a>
+                        
+                        <div style="margin: 10px 0; border-top: 1px solid var(--borda);"></div>
+                        
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Sair</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Dashboard Content -->
+        <section class="dashboard-content">
+            <div class="welcome-section">
+                <h1>Bem-vindo, <h1 class="welcome-user"></h1></h1>
+                <p>Aqui está o resumo das atividades e estatísticas do sistema institucional.</p>
+            </div>
+            
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>1.248</h3>
+                        <p>Usuários Ativos</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>5.763</h3>
+                        <p>Documentos</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>142</h3>
+                        <p>Eventos Agendados</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>87%</h3>
+                        <p>Desempenho do Sistema</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Charts Grid -->
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <h2>Atividade Mensal</h2>
+                        <div class="chart-actions">
+                            <button title="Download"><i class="fas fa-download"></i></button>
+                            <button title="Mais opções"><i class="fas fa-ellipsis-h"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-placeholder">
+                        <div>
+                            <i class="fas fa-chart-line" style="font-size: 48px; margin-bottom: 15px;"></i>
+                            <p>Gráfico de atividades mensais</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <h2>Distribuição de Usuários</h2>
+                        <div class="chart-actions">
+                            <button title="Download"><i class="fas fa-download"></i></button>
+                        </div>
+                    </div>
+                    <div class="chart-placeholder">
+                        <div>
+                            <i class="fas fa-chart-pie" style="font-size: 48px; margin-bottom: 15px;"></i>
+                            <p>Gráfico de distribuição de usuários</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recent Activity -->
+            <div class="activity-container">
+                <div class="chart-header">
+                    <h2>Atividade Recente</h2>
+                    <div class="chart-actions">
+                        <button title="Ver todas"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+                
+                <ul class="activity-list">
+                    <li class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-title">Novo usuário cadastrado</div>
+                            <div class="activity-description">Ana Silva foi adicionada ao sistema pelo administrador</div>
+                            <div class="activity-time">Hoje, 09:42 AM</div>
+                        </div>
+                    </li>
+                    
+                    <li class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-file-upload"></i>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-title">Documento atualizado</div>
+                            <div class="activity-description">Relatório trimestral foi modificado por Carlos Oliveira</div>
+                            <div class="activity-time">Ontem, 04:15 PM</div>
+                        </div>
+                    </li>
+                    
+                    <li class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-title">Atualização de segurança</div>
+                            <div class="activity-description">Sistema foi atualizado para a versão 2.3.1</div>
+                            <div class="activity-time">15 de Agosto, 10:30 AM</div>
+                        </div>
+                    </li>
+                    
+                    <li class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-title">Novo evento agendado</div>
+                            <div class="activity-description">Reunião de planejamento para o próximo trimestre</div>
+                            <div class="activity-time">14 de Agosto, 03:20 PM</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Pró Reitoria de Assistência Estudantil e Inclusão &copy; <span id="ano"></span> - Universidade Federal Rural de Pernambuco</p>
+        </footer>
+    </main>
+    <script src="../scripts/dashboard.js"></script>
+</body>
+</html>

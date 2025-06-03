@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação de Senha</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+    <!-- Botão para acionar o modal (exemplo) -->
+    <button id="openModalBtn" class="trigger-btn">Esqueci a Senha</button>
+
+    <!-- Estrutura do Modal -->
+    <div id="passwordModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-key"></i>
+                <h2>Recuperação de Senha</h2>
+            </div>
+            <div class="modal-body">
+                <p>Para redefinir sua senha, entre em contato com o técnico de tecnologia da informação:</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-user"></i>
+                        <span>Gleydson Brito</span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>
+                            E-mail: 
+                            <a href="mailto:gleydson.brito@ufrpe.br">gleydson.brito@ufrpe.br</a>
+                        </span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>
+                            WhatsApp: 
+                            <a href="https://wa.me/5581997460887" target="_blank">(81) 99746-0887</a>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="support-hours">
+                    <i class="fas fa-clock"></i>
+                    <p>Horário de atendimento: Segunda a Sexta, das 8h às 17h</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn confirm-btn">Entendi</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/modal.js"></script>
+</body>
+</html>
