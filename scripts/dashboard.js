@@ -2,9 +2,9 @@ const ano = document.querySelector('#ano');
 ano.innerHTML = new Date().getFullYear().toString()
 
 const nomeUser = document.querySelectorAll('.user-name')
-const {nome, sobrenome, email} = JSON.parse(localStorage.getItem('perfil'))
+const { nome, sobrenome, email } = JSON.parse(localStorage.getItem('perfil'))
 
-nomeUser.forEach(n => n.innerHTML = `${capitalizar(nome)} ${capitalizar(sobrenome)}` )
+nomeUser.forEach(n => n.innerHTML = `${capitalizar(nome)} ${capitalizar(sobrenome)}`)
 
 
 const iniciais = `${nome.charAt(0).toUpperCase()}${sobrenome.charAt(sobrenome).toUpperCase()}`
@@ -49,15 +49,7 @@ menuItems.forEach(item => {
     });
 });
 
-// Notification badge
-const notification = document.querySelector('.notification');
-
-notification.addEventListener('click', function () {
-    const badge = document.querySelector('.notification-badge');
-    badge.textContent = '0';
-    badge.style.backgroundColor = '#777';
-});
 
 function capitalizar(str) {
-       return str.charAt(0).toUpperCase() + str.slice(1);
-     }
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}

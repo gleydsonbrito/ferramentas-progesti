@@ -9,7 +9,7 @@ loginForm.addEventListener('submit', function (e) {
   fetch('./u.json')
     .then(res => res.json())
     .then(res => {
-      const findedUser = res.usuarios.find(u => u.email === inputEmail)
+      const findedUser = res.usuarios.find(u => u.login === inputEmail)
       if (findedUser) {
         res.usuarios.forEach(usuario => {
           if (usuario.login === inputEmail) {
@@ -28,7 +28,7 @@ loginForm.addEventListener('submit', function (e) {
           }
         });
       } else {
-        alert(`O usuário ${email} não está cadastrado no sistema.`)
+        alert(`O usuário ${inputEmail} não está cadastrado no sistema.`)
       }
     })
 });
